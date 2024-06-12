@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Vollkorn', serif;
     background-color: #121212;
     color: #ffffff;
 }
@@ -44,10 +44,6 @@ nav ul li a:hover {
 
 .section h2 {
     margin-top: 0;
-}
-
-.project {
-    margin-bottom: 20px;
 }
 
 footer {
