@@ -943,7 +943,7 @@ a {
   }
 }
 .cid-ut2ifkCqcU .iconfont-wrapper {
-  color: #ba256a !important;
+  color: #ffffff !important;
   font-size: 1.5rem;
   padding-right: 0.5rem;
 }
@@ -1350,11 +1350,13 @@ a {
 }
 .cid-ut2wpy3LK8 {
   display: flex;
-  background-image: url("../../../assets/images/london-cityscape-sunset-river-buildings-england-wallpaper-2000x1125.jpg");
+  padding-top: 12rem;
+  padding-bottom: 3rem;
+  background-image: url("../../../assets/images/mbr-1920x1282.jpg");
 }
 .cid-ut2wpy3LK8 .mbr-overlay {
   background-color: #000000;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 @media (min-width: 768px) {
   .cid-ut2wpy3LK8 {
@@ -1563,8 +1565,8 @@ a {
   justify-content: center;
   border-radius: 100%;
   font-size: 32px;
-  background-color: #ba256a;
-  color: #35126a;
+  background-color: #ffffff;
+  color: #000000;
   transition: all 0.3s ease-in-out;
 }
 .cid-ut2yQPjMlu .row-links {
@@ -1763,7 +1765,7 @@ a {
   }
 }
 .cid-ut2ifkCqcU .iconfont-wrapper {
-  color: #ba256a !important;
+  color: #ffffff !important;
   font-size: 1.5rem;
   padding-right: 0.5rem;
 }
@@ -2298,8 +2300,8 @@ a {
   justify-content: center;
   border-radius: 100%;
   font-size: 32px;
-  background-color: #ba256a;
-  color: #35126a;
+  background-color: #ffffff;
+  color: #000000;
   transition: all 0.3s ease-in-out;
 }
 .cid-ut2yQPjMlu .row-links {
@@ -2498,7 +2500,7 @@ a {
   }
 }
 .cid-ut2ifkCqcU .iconfont-wrapper {
-  color: #ba256a !important;
+  color: #ffffff !important;
   font-size: 1.5rem;
   padding-right: 0.5rem;
 }
@@ -2967,8 +2969,8 @@ a {
   justify-content: center;
   border-radius: 100%;
   font-size: 32px;
-  background-color: #ba256a;
-  color: #35126a;
+  background-color: #ffffff;
+  color: #000000;
   transition: all 0.3s ease-in-out;
 }
 .cid-ut2yQPjMlu .row-links {
