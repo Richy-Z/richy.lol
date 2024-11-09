@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Converter</title>
+    <style>
+        /* General styling for layout and dark theme */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden; /* Prevents body from scrolling */
+        }
+
+        /* Container styling */
+        .container {
+            background-color: #2c2c2c;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            overflow: auto; /* Allows the container to be scrollable if content overflows */
+            max-height: 90vh; /* Limits container height to viewport */
+        }
+
+        /* Header styling */
+        h2 {
+            color: #e0e0e0;
+            font-size: 24px;
+        }
+
+        /* Paragraph styling */
+        p {
+            color: #b0b0b0;
+        }
+
+        /* Input box styling */
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 16px;
+            border: 1px solid #4a4a4a;
+            border-radius: 4px;
+            background-color: #3a3a3a;
+            color: #ffffff;
+            outline: none;
+        }
+
+        /* Button styling */
+        button {
+            margin-top: 15px;
+            padding: 10px 15px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: #4a90e2;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Button hover effect */
+        button:hover {
+            background-color: #357ab8;
+        }
+
+        /* Results text styling */
+        h3 {
+            color: #e0e0e0;
+            margin-top: 20px;
+        }
+
+        #results {
+            padding: 15px;
+            background-color: #3a3a3a;
+            border-radius: 4px;
+            font-size: 18px;
+            color: #ffffff;
+            min-height: 50px;
+            max-height: 150px; /* Limits results box height */
+            overflow-y: auto; /* Adds vertical scroll if content overflows */
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>String Converter</h2>
+        <p>Please enter your string:</p>
+
+        <input type="text" id="input" placeholder="\99\104, etc...">
+        <button onclick="convert()">Convert</button>
+
+        <h3>Results:</h3>
+        <p id="results"></p>
+
+        <button onclick="reverse()">Reverse this string</button>
+    </div>
+
+    <script>
+        function convert() {
+            const input = document.getElementById("input").value;
+            let result = "";
+
+            const matches = input.match(/\\(\d{2,3})/g);
+
+            if (matches) {
+                matches.forEach(element => {
+                    const asciiCode = parseInt(element.slice(1), 10);
+                    result += String.fromCharCode(asciiCode);
+                });
+            }
+
+            document.getElementById("results").textContent = result;
+        }
+
+        function reverse() {
+            const input = document.getElementById("results").textContent;
+            document.getElementById("results").textContent = input.split("").reverse().join("");
+        }
+    </script>
+</body>
+</html>
