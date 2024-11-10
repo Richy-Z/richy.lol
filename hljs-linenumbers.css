@@ -1,9 +1,13 @@
 /* for block of numbers */
 .hljs-ln-numbers {
     text-align: center;
-    color: #505050;
+    color: rgb(88, 88, 88);
     vertical-align: top;
-    padding-right: 10px;
+    /* padding-right: 10px; */
+}
+
+.hljs-ln td {
+    padding-right: 5px;
 }
 
 /* for block of code */
