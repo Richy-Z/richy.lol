@@ -1,15 +1,15 @@
 /*!
- * Monokai Pirokai - Arctic Frost Highlight.js Theme
+ * Monokai Pirokai - Arctic Frost Highlight.js Theme (customised)
  * Original Theme by Lakshits (https://github.com/lakshits11/monokai-pirokai)
- * Converted to Highlight.js by Richard Ziupsnys
+ * Adapted for Highlight.js by Richard Ziupsnys
  */
 
 /* Base styling for code block */
 .hljs {
     display: block;
     overflow-x: auto;
-    background: #1F1F28; /* Base background color */
-    color: #E2E2E3; /* Base text color */
+    background: #1F1F28;
+    color: #E2E2E3;
     padding: 1em;
     border-radius: 8px;
     line-height: 1.5;
@@ -22,57 +22,58 @@
     font-style: italic;
 }
 
-/* Keywords, Control Flow (if, else), etc. */
+/* Keywords, Control Flow (if, else, while), Math Operators */
 .hljs-keyword,
 .hljs-built_in,
 .hljs-selector-tag,
 .hljs-type,
 .hljs-literal,
 .hljs-template-tag,
-.hljs-template-variable,
 .hljs-regexp,
-.hljs-meta .hljs-keyword {
-    color: #FC5D7C;
+.hljs-meta .hljs-keyword,
+.hljs-operator {
+    color: #FC5D7C; /* Red for keywords and math operators */
 }
 
-/* Strings */
-.hljs-string,
-.hljs-title,
-.hljs-section,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-meta-string {
-    color: #E7C664;
+/* Punctuation (concatenation and brackets) */
+.hljs-punctuation {
+    color: #FC5D7C; /* Red for concatenation operators (..) */
+}
+
+/* Strings and Escape Sequences */
+.hljs-string {
+    color: #E7C664; /* Yellow for regular strings */
 }
 
 /* Numbers, Constants */
 .hljs-number,
 .hljs-symbol,
 .hljs-bullet,
-.hljs-variable,
-.hljs-template-variable {
+.hljs-literal {
     color: #B39DF3;
 }
 
-/* Punctuation */
-.hljs-punctuation,
-.hljs-attr {
-    color: #7F8490;
+/* Variable Names (Identifiers) */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-title.class_,
+.hljs-title.function_ {
+    color: #A86EFD; /* Purple for variable names */
 }
 
-/* Functions, Classes */
+/* Function and Class Names */
 .hljs-function,
 .hljs-title.class_,
 .hljs-title.function_ {
     color: #A2AEEF;
 }
 
-/* Attribute names (within HTML, CSS, etc.) */
+/* Attribute names within HTML, CSS, etc. */
 .hljs-attribute {
     color: #FC5D7C;
 }
 
-/* Highlight for important items */
+/* Emphasis and Strong elements */
 .hljs-strong {
     font-weight: bold;
     color: #FC5D7C;
