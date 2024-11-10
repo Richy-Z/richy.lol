@@ -2,8 +2,13 @@
 .hljs-ln-numbers {
     text-align: center;
     color: #505050;
-    border-right: 1px solid #CCC;
+    border-right: 10px;
     vertical-align: top;
     padding-right: 10px;
 
+}
+
+/* for block of code */
+.hljs-ln-code {
+    padding-left: 10px;
 }
