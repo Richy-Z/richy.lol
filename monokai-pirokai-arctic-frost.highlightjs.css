@@ -1,0 +1,84 @@
+/*!
+ * Monokai Pirokai - Arctic Frost Highlight.js Theme
+ * Original Theme by Lakshits (https://github.com/lakshits11/monokai-pirokai)
+ * Converted to Highlight.js by Richard Ziupsnys
+ */
+
+/* Base styling for code block */
+.hljs {
+    display: block;
+    overflow-x: auto;
+    background: #1F1F28; /* Base background color */
+    color: #E2E2E3; /* Base text color */
+    padding: 1em;
+    border-radius: 8px;
+    line-height: 1.5;
+}
+
+/* Comments */
+.hljs-comment,
+.hljs-quote {
+    color: #7F8490;
+    font-style: italic;
+}
+
+/* Keywords, Control Flow (if, else), etc. */
+.hljs-keyword,
+.hljs-built_in,
+.hljs-selector-tag,
+.hljs-type,
+.hljs-literal,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-regexp,
+.hljs-meta .hljs-keyword {
+    color: #FC5D7C;
+}
+
+/* Strings */
+.hljs-string,
+.hljs-title,
+.hljs-section,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-meta-string {
+    color: #E7C664;
+}
+
+/* Numbers, Constants */
+.hljs-number,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-variable,
+.hljs-template-variable {
+    color: #B39DF3;
+}
+
+/* Punctuation */
+.hljs-punctuation,
+.hljs-attr {
+    color: #7F8490;
+}
+
+/* Functions, Classes */
+.hljs-function,
+.hljs-title.class_,
+.hljs-title.function_ {
+    color: #A2AEEF;
+}
+
+/* Attribute names (within HTML, CSS, etc.) */
+.hljs-attribute {
+    color: #FC5D7C;
+}
+
+/* Highlight for important items */
+.hljs-strong {
+    font-weight: bold;
+    color: #FC5D7C;
+}
+
+.hljs-emphasis {
+    font-style: italic;
+    color: #E2E2E3;
+}
