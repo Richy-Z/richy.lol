@@ -244,10 +244,10 @@
             input.placeholder = example;
         }
 
-        function replaceAsciiCodes(eenput, delimiters = ["'", '"', "`", "[", "]"]) {
+        function replaceAsciiCodes(eenput, delimiters = ["'", '"', '`', '[', ']']) {
             // hello explorer!
             // im gonna make this easy to understand for you, since it was really hard for me to write too
-            const delimiterPattern = delimiters.map(delimiter => `\\${delimiter}`).join("|");
+            const delimiterPattern = delimiters.map(delimiter => `\\${delimiter}`).join('|');
 
             // regex explanation:
             // 1. capture an opening delimiter ([${delimiterPattern}])
