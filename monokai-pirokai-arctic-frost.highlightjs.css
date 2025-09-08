@@ -6,20 +6,20 @@
 
 /* Base styling for code block */
 .hljs {
-    display: block;
-    overflow-x: auto;
-    background: #1F1F28;
-    color: #E2E2E3;
-    padding: 1em;
-    border-radius: 8px;
-    line-height: 1.5;
+  display: block;
+  overflow-x: auto;
+  background: #1f1f28;
+  color: #e2e2e3;
+  padding: 1em;
+  border-radius: 8px;
+  line-height: 1.5;
 }
 
 /* Comments */
 .hljs-comment,
 .hljs-quote {
-    color: #7F8490;
-    font-style: italic;
+  color: #7f8490;
+  font-style: italic;
 }
 
 /* Keywords, Control Flow (if, else, while), Math Operators */
@@ -32,17 +32,17 @@
 .hljs-regexp,
 .hljs-meta .hljs-keyword,
 .hljs-operator {
-    color: #FC5D7C; /* Red for keywords and math operators */
+  color: #fc5d7c; /* Red for keywords and math operators */
 }
 
 /* Punctuation (concatenation and brackets) */
 .hljs-punctuation {
-    color: #FC5D7C; /* Red for concatenation operators (..) */
+  color: #fc5d7c; /* Red for concatenation operators (..) */
 }
 
 /* Strings and Escape Sequences */
 .hljs-string {
-    color: #E7C664; /* Yellow for regular strings */
+  color: #e7c664; /* Yellow for regular strings */
 }
 
 /* Numbers, Constants */
@@ -50,7 +50,7 @@
 .hljs-symbol,
 .hljs-bullet,
 .hljs-literal {
-    color: #B39DF3;
+  color: #b39df3;
 }
 
 /* Variable Names (Identifiers) */
@@ -58,28 +58,28 @@
 .hljs-template-variable,
 .hljs-title.class_,
 .hljs-title.function_ {
-    color: #A86EFD; /* Purple for variable names */
+  color: #a86efd; /* Purple for variable names */
 }
 
 /* Function and Class Names */
 .hljs-function,
 .hljs-title.class_,
 .hljs-title.function_ {
-    color: #A2AEEF;
+  color: #a2aeef;
 }
 
 /* Attribute names within HTML, CSS, etc. */
 .hljs-attribute {
-    color: #FC5D7C;
+  color: #fc5d7c;
 }
 
 /* Emphasis and Strong elements */
 .hljs-strong {
-    font-weight: bold;
-    color: #FC5D7C;
+  font-weight: bold;
+  color: #fc5d7c;
 }
 
 .hljs-emphasis {
-    font-style: italic;
-    color: #E2E2E3;
+  font-style: italic;
+  color: #e2e2e3;
 }
