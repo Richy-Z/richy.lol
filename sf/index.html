@@ -149,80 +149,31 @@
 
         <section>
             <h2 class="text-lg font-semibold mb-4">Timetable</h2>
-            <div class="overflow-x-auto rounded border border-neutral-700">
-                <table class="min-w-full text-sm">
-                    <thead class="bg-neutral-800">
-                        <tr>
-                            <th class="px-3 py-2 text-left font-medium">Period</th>
-                            <th class="px-3 py-2 text-left font-medium">Mon</th>
-                            <th class="px-3 py-2 text-left font-medium">Tue</th>
-                            <th class="px-3 py-2 text-left font-medium">Wed</th>
-                            <th class="px-3 py-2 text-left font-medium">Thu</th>
-                            <th class="px-3 py-2 text-left font-medium">Fri</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-neutral-800">
-                        <tr>
-                            <td class="px-3 py-2 font-medium">P1</td>
-                            <td class="px-3 py-2">-</td>
-                            <td class="px-3 py-2">-</td>
-                            <td class="px-3 py-2">-</td>
-                            <td class="px-3 py-2">-</td>
-                            <td class="px-3 py-2">-</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">P2</td>
-                            <td class="px-3 py-2">-</td>
-                            <td class="px-3 py-2">-</td>
-                            <td class="px-3 py-2">-</td>
-                            <td class="px-3 py-2">-</td>
-                            <td class="px-3 py-2">-</td>
-                        </tr>
-                        <tr class="bg-neutral-800/40">
-                            <td class="px-3 py-2 font-medium">Break</td>
-                            <td colspan="5" class="px-3 py-2"></td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">P3</td>
-                            <td class="px-3 py-2">-</td>
-                            <td class="px-3 py-2">-</td>
-                            <td class="px-3 py-2">-</td>
-                            <td class="px-3 py-2">-</td>
-                            <td class="px-3 py-2">-</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">P4</td>
-                            <td class="px-3 py-2">-</td>
-                            <td class="px-3 py-2">-</td>
-                            <td class="px-3 py-2">-</td>
-                            <td class="px-3 py-2">-</td>
-                            <td class="px-3 py-2">-</td>
-                        </tr>
-                        <tr class="bg-neutral-800/40">
-                            <td class="px-3 py-2 font-medium">Lunch</td>
-                            <td colspan="5" class="px-3 py-2"></td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">P5</td>
-                            <td class="px-3 py-2">-</td>
-                            <td class="px-3 py-2">-</td>
-                            <td class="px-3 py-2">-</td>
-                            <td class="px-3 py-2">-</td>
-                            <td class="px-3 py-2">-</td>
-                        </tr>
-                        <tr>
-                            <td class="px-3 py-2 font-medium">P6</td>
-                            <td class="px-3 py-2">-</td>
-                            <td class="px-3 py-2">-</td>
-                            <td class="px-3 py-2">-</td>
-                            <td class="px-3 py-2">-</td>
-                            <td class="px-3 py-2">-</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
 
+            <div id="timetable-wrapper" class="space-y-8"></div>
+
+            <template id="timetable-template">
+                <div>
+                    <h3 class="mb-2 font-medium text-neutral-300">Week X</h3>
+                    <div class="overflow-x-auto rounded border border-neutral-700">
+                        <table class="min-w-full text-sm border border-neutral-700">
+                            <thead class="bg-neutral-800">
+                                <tr>
+                                    <th class="px-3 py-2 text-left font-medium">Period</th>
+                                    <th class="px-3 py-2 text-left font-medium">Mon</th>
+                                    <th class="px-3 py-2 text-left font-medium">Tue</th>
+                                    <th class="px-3 py-2 text-left font-medium">Wed</th>
+                                    <th class="px-3 py-2 text-left font-medium">Thu</th>
+                                    <th class="px-3 py-2 text-left font-medium">Fri</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-neutral-800"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </template>
+        </section>
+        <script src="timetable.js"></script>
     </main>
 </body>
 
