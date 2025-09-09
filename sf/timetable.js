@@ -1,13 +1,29 @@
-document.addEventListener("DOMContentLoaded", async () => {
+(async () => {
     const res = await fetch("./timetable.json");
-    const data = await res.json();
-
+    return await res.json();
+})().then(async (data) => {
     const wrapper = document.getElementById("timetable-wrapper");
     const template = document.getElementById("timetable-template");
 
     const weeks = { a: "Week A", b: "Week B" };
     const days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
     const periods = ["P1", "P2", "P3", "P4", "P5", "P6"];
+
+    function specialRow(label) {
+        const tr = document.createElement("tr");
+        tr.className = "bg-neutral-800";
+        const td = document.createElement("td");
+        td.className = "px-3 py-2 font-medium";
+        td.textContent = label;
+        tr.appendChild(td);
+
+        const td2 = document.createElement("td");
+        td2.className = "px-3 py-2";
+        td2.setAttribute("colspan", "5");
+        tr.appendChild(td2);
+
+        return tr;
+    }
 
     for (const key of ["a", "b"]) {
         const clone = template.content.cloneNode(true);
@@ -18,9 +34,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         periods.forEach((period, i) => {
             const tr = document.createElement("tr");
             if (period === "P3") {
-                tbody.appendChild(makeSpecialRow("Break"));
+                tbody.appendChild(specialRow("Break"));
             } else if (period === "P5") {
-                tbody.appendChild(makeSpecialRow("Lunch"));
+                tbody.appendChild(specialRow("Lunch"));
             }
 
             const periodLabel = document.createElement("td");
@@ -58,20 +74,5 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         wrapper.appendChild(clone);
     }
+
 });
-
-function makeSpecialRow(label) {
-    const tr = document.createElement("tr");
-    tr.className = "bg-neutral-800";
-    const td = document.createElement("td");
-    td.className = "px-3 py-2 font-medium";
-    td.textContent = label;
-    tr.appendChild(td);
-
-    const td2 = document.createElement("td");
-    td2.className = "px-3 py-2";
-    td2.setAttribute("colspan", "5");
-    tr.appendChild(td2);
-
-    return tr;
-}
