@@ -13,11 +13,46 @@
 		"⸻": ["", "text-neutral-300"]
 	},
 	"a": {
-		"Mon": [],
-		"Tue": [],
-		"Wed": [],
-		"Thu": [],
-		"Fri": []
+		"Mon": [
+			[],
+			["Economics", "SF15"],
+			[],
+			["Further Ma", "M2"],
+			["PSE", "SF16"],
+			["Computing", "W10"]
+		],
+		"Tue": [
+			["Computing", "W11"],
+			["Supervised St", "E31"],
+			["Mathematics", "E16"],
+			["Supervised St", "E31"],
+			["Supervised St", "Library"],
+			["Further Ma", "M2"]
+		],
+		"Wed": [
+			["Mathematics", "E17"],
+			["Economics", "SF15"],
+			["Computing", "W11"],
+			["Further Ma", "M1"],
+			["Young Enterprise", "SF15"],
+			["Young Enterprise", "SF15"]
+		],
+		"Thu": [
+			["Supervised St", "E31"],
+			["Further Ma", "M2"],
+			["Economics", "SF15"],
+			["Economics", "SF15"],
+			["Supervised St", "E31"],
+			["Mathematics", "M3"]
+		],
+		"Fri": [
+			["Mathematics", "M3"],
+			["Mathematics", "E17"],
+			["Computing", "W10"],
+			["Computing", "W11"],
+			["Further Ma", "M1"],
+			["Economics", "SF15"]
+		]
 	},
 	"b": {
 		"Mon": [
