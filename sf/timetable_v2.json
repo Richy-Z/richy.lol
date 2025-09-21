@@ -1,0 +1,238 @@
+{
+	"colours": {
+		"Economics": ["bg-orange-300", "text-orange-900"],
+		"Mathematics": ["bg-blue-300", "text-blue-900"],
+		"Further Ma": ["bg-pink-300", "text-pink-900"],
+		"Computing": ["bg-green-300", "text-green-900"],
+
+		"Supervised St": ["bg-yellow-100", "text-yellow-900"],
+		"Young Enterprise": ["bg-red-300", "text-red-900"],
+
+		"PSE": ["bg-violet-300", "text-violet-900"],
+
+		"⸻": ["", "text-neutral-300"]
+	},
+	"a": {
+		"Mon": [
+			[],
+			{
+				"subject": "Economics",
+				"room": "SF15"
+			},
+			[],
+			{
+				"subject": "Further Ma",
+				"room": "M2",
+				"teacher": "Dr Mc",
+				"friends": ["B"]
+			},
+			["PSE", "SF16"],
+			{
+				"subject": "Computing",
+				"room": "W10",
+				"teacher": "Dr John",
+				"friends": ["B"]
+			}
+		],
+		"Tue": [
+			{
+				"subject": "Computing",
+				"room": "W11",
+				"teacher": "Steel",
+				"friends": ["B"]
+			},
+			{
+				"subject": "Supervised St",
+				"room": "E31",
+				"friends": ["B"]
+			},
+			["Mathematics", "E16"],
+			["Supervised St", "E31"],
+			["Supervised St", "Library"],
+			{
+				"subject": "Further Ma",
+				"room": "M2",
+				"teacher": "Dr Mc",
+				"friends": ["B"]
+			}
+		],
+		"Wed": [
+			["Mathematics", "E17"],
+			["Economics", "SF15"],
+			{
+				"subject": "Computing",
+				"room": "W11",
+				"teacher": "Steel",
+				"friends": ["B"]
+			},
+			{
+				"subject": "Further Ma",
+				"room": "M1",
+				"teacher": "Hunt",
+				"friends": ["B"]
+			},
+			["Young Enterprise", "SF15"],
+			["Young Enterprise", "SF15"]
+		],
+		"Thu": [
+			{
+				"subject": "Supervised St",
+				"room": "E31",
+				"friends": ["B"]
+			},
+			{
+				"subject": "Further Ma",
+				"room": "M2",
+				"teacher": "Dr Mc",
+				"friends": ["B"]
+			},
+			["Economics", "SF15"],
+			["Economics", "SF15"],
+			["Supervised St", "E31"],
+			{
+				"subject": "Mathematics",
+				"room": "M3",
+				"teacher": "Lo"
+			}
+		],
+		"Fri": [
+			{
+				"subject": "Mathematics",
+				"room": "M3",
+				"teacher": "Lo"
+			},
+			["Mathematics", "E17"],
+			{
+				"subject": "Computing",
+				"room": "W10",
+				"teacher": "Dr John",
+				"friends": ["B"]
+			},
+			{
+				"subject": "Computing",
+				"room": "W11",
+				"teacher": "Steel",
+				"friends": ["B"]
+			},
+			{
+				"subject": "Further Ma",
+				"room": "M1",
+				"teacher": "Hunt",
+				"friends": ["B"]
+			},
+			["Economics", "SF15"]
+		]
+	},
+	"b": {
+		"Mon": [
+			{
+				"subject": "Supervised St",
+				"room": "E31",
+				"friends": ["B"]
+			},
+			{
+				"subject": "Computing",
+				"room": "W11",
+				"teacher": "Steel",
+				"friends": ["B"]
+			},
+			[],
+			{
+				"subject": "Mathematics",
+				"room": "M3",
+				"teacher": "Lo"
+			},
+			["Supervised St", "SF1"],
+			{
+				"subject": "Further Ma",
+				"room": "M2",
+				"teacher": "Dr Mc",
+				"friends": ["B"]
+			}
+		],
+		"Tue": [
+			["Supervised St", "SF1"],
+			["Economics", "SF15"],
+			{
+				"subject": "Supervised St",
+				"room": "SF1",
+				"friends": ["B"]
+			},
+			{
+				"subject": "Further Ma",
+				"room": "M2",
+				"teacher": "Dr Mc",
+				"friends": ["B"]
+			},
+			["Mathematics", "E16"],
+			{
+				"subject": "Computing",
+				"room": "W10",
+				"teacher": "Dr John",
+				"friends": ["B"]
+			}
+		],
+		"Wed": [
+			{
+				"subject": "Computing",
+				"room": "W11",
+				"teacher": "Steel",
+				"friends": ["B"]
+			},
+			{
+				"subject": "Further Ma",
+				"room": "M1",
+				"teacher": "Hunt",
+				"friends": ["B"]
+			},
+			["Economics", "SF15"],
+			{
+				"subject": "Mathematics",
+				"room": "M3",
+				"teacher": "Lo"
+			},
+			["Young Enterprise", "SF15"],
+			["Young Enterprise", "SF15"]
+		],
+		"Thu": [
+			["Supervised St", "SF1"],
+			["Mathematics", "S15"],
+			{
+				"subject": "Computing",
+				"room": "W10",
+				"teacher": "Dr John",
+				"friends": ["B"]
+			},
+			{
+				"subject": "Computing",
+				"room": "W11",
+				"teacher": "Steel",
+				"friends": ["B"]
+			},
+			["PSE", "E22"],
+			["Economics", "W2"]
+		],
+		"Fri": [
+			{
+				"subject": "Further Ma",
+				"room": "M1",
+				"teacher": "Hunt",
+				"friends": ["B"]
+			},
+			{
+				"subject": "Further Ma",
+				"room": "M2",
+				"teacher": "Dr Mc",
+				"friends": ["B"]
+			},
+			["Economics", "SF15"],
+			["Economics", "SF15"],
+			[],
+			{
+				"subject": "Mathematics",
+				"room": "M3",
+				"teacher": "Lo"
+			}
+		]
+	}
+}
