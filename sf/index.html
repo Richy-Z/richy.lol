@@ -229,6 +229,7 @@
 
             <div id="timetable-wrapper" class="space-y-8"></div>
 
+            <!-- Whole table template -->
             <template id="timetable-template">
                 <div>
                     <h3 class="mb-2 font-medium text-neutral-300">Week X</h3>
@@ -249,7 +250,25 @@
                     </div>
                 </div>
             </template>
+
+            <!-- special row eg break or lunch with huge border idk -->
+            <template id="special-row-template">
+                <tr class="bg-neutral-800">
+                    <td class="px-3 py-2 font-medium">LABEL</td>
+                    <td colspan="5" class="px-3 py-2"></td>
+                </tr>
+            </template>
+
+            <template id="period-cell-template">
+                <td class="px-3 py-2 text-center align-middle border border-neutral-700">
+                    <div class="font-bold subject-text">SUBJECT</div>
+                    <div class="text-xs text-neutral-700 room-text">ROOM</div>
+                    <div class="text-xs text-neutral-600 teacher-text hidden">TEACHER</div>
+                    <div class="absolute bottom-1 right-1 grid gap-0.5 friends-list"></div>
+                </td>
+            </template>
         </section>
+
         <script src="timetable.js"></script>
     </main>
 </body>
