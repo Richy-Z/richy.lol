@@ -21,6 +21,114 @@
 
     <main class="max-w-5xl mx-auto px-4 space-y-12 pb-16">
         <section>
+            <h2 class="text-lg font-semibold mb-4">Timetable</h2>
+
+            <div id="timetable-wrapper" class="space-y-8"></div>
+
+            <!-- Whole table template -->
+            <template id="timetable-template">
+                <div>
+                    <h3 class="mb-2 font-medium text-neutral-300">Week X</h3>
+                    <div class="overflow-x-auto rounded border border-neutral-700">
+                        <table class="min-w-full text-sm border border-neutral-700">
+                            <thead class="bg-neutral-800">
+                                <tr>
+                                    <th class="px-3 py-2 text-left font-medium">Period</th>
+                                    <th class="px-3 py-2 text-left font-medium">Mon</th>
+                                    <th class="px-3 py-2 text-left font-medium">Tue</th>
+                                    <th class="px-3 py-2 text-left font-medium">Wed</th>
+                                    <th class="px-3 py-2 text-left font-medium">Thu</th>
+                                    <th class="px-3 py-2 text-left font-medium">Fri</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-neutral-800"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </template>
+
+            <!-- special row eg break or lunch with huge border idk -->
+            <template id="special-row-template">
+                <tr class="bg-neutral-800">
+                    <td class="px-3 py-2 font-medium">LABEL</td>
+                    <td colspan="5" class="px-3 py-2"></td>
+                </tr>
+            </template>
+
+            <template id="period-cell-template">
+                <td class="px-3 py-2 text-center align-middle border border-neutral-700">
+                    <div class="font-bold subject-text">SUBJECT</div>
+                    <div class="text-xs text-neutral-700 room-text">ROOM</div>
+                    <div class="text-xs text-neutral-600 teacher-text hidden">TEACHER</div>
+                    <div class="absolute bottom-1 right-1 grid gap-0.5 friends-list"></div>
+                </td>
+            </template>
+        </section>
+
+        <script src="timetable.js"></script>
+
+        <section>
+            <h3 class="text-base font-medium mb-2"><i class="fa-solid fa-book mr-2"></i>Mathematics Textbooks</h3>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+                <div class="relative group overflow-hidden shadow border border-neutral-700 rounded-lg">
+                    <img src="./img/red.jpeg" alt="Statistics and Mechanics"
+                        class="w-full h-auto transition duration-300 group-hover:brightness-110 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300">
+                        <a href="https://github.com/Richy-Z/richy.lol/releases/download/0.0.0-test/Maths.-.Statistics.and.Mechanics.Y1.pdf"
+                            target="_blank"
+                            class="flex items-center justify-center gap-2 w-32 px-4 py-2 text-base border border-white text-white rounded-none hover:bg-neutral-800 hover:border-neutral-800 transition">
+                            <i class="fa-solid fa-book-open"></i> View
+                        </a>
+                        <a href="https://activeteach-prod.resource.pearson-intl.com/r00/r0067/r006746/r00674672/current/Statistics_and_Mechanics_Year_1_AS_Extra_online_content.html"
+                            target="_blank"
+                            class="flex items-center justify-center gap-2 w-32 px-4 py-2 text-base border border-white text-white rounded-none hover:bg-neutral-800 hover:border-neutral-800 transition">
+                            <i class="fa-solid fa-clipboard-list"></i> Solutions
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden shadow border border-neutral-700 rounded-lg">
+                    <img src="./img/blue.jpeg" alt="Pure Mathematics"
+                        class="w-full h-auto transition duration-300 group-hover:brightness-110 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300">
+                        <a href="https://github.com/Richy-Z/richy.lol/releases/download/0.0.0-test/Maths.-.Pure.Maths.Y1.pdf"
+                            target="_blank"
+                            class="flex items-center justify-center gap-2 w-32 px-4 py-2 text-base border border-white text-white rounded-none hover:bg-neutral-800 hover:border-neutral-800 transition">
+                            <i class="fa-solid fa-book-open"></i> View
+                        </a>
+                        <a href="https://activeteach-prod.resource.pearson-intl.com/r00/r0065/r006591/r00659130/current/Pure_Mathematics_Year_1_AS_Extra_online_content.html"
+                            target="_blank"
+                            class="flex items-center justify-center gap-2 w-32 px-4 py-2 text-base border border-white text-white rounded-none hover:bg-neutral-800 hover:border-neutral-800 transition">
+                            <i class="fa-solid fa-clipboard-list"></i> Solutions
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden shadow border border-neutral-700 rounded-lg">
+                    <img src="./img/green.jpeg" alt="Core Pure Mathematics"
+                        class="w-full h-auto transition duration-300 group-hover:brightness-110 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300">
+                        <a href="https://github.com/Richy-Z/richy.lol/releases/download/0.0.0-test/Further.Maths.-.Core.Pure.1.AS.pdf"
+                            target="_blank"
+                            class="flex items-center justify-center gap-2 w-32 px-4 py-2 text-base border border-white text-white rounded-none hover:bg-neutral-800 hover:border-neutral-800 transition">
+                            <i class="fa-solid fa-book-open"></i> View
+                        </a>
+                        <a href="https://activeteach-prod.resource.pearson-intl.com/r00/r0072/r007215/r00721584/current/Core_Pure_Year_1_AS_Extra_online_content.html"
+                            target="_blank"
+                            class="flex items-center justify-center gap-2 w-32 px-4 py-2 text-base border border-white text-white rounded-none hover:bg-neutral-800 hover:border-neutral-800 transition">
+                            <i class="fa-solid fa-clipboard-list"></i> Solutions
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
             <div class="grid md:grid-cols-2 gap-6">
 
                 <div class="md:col-span-2">
@@ -152,67 +260,6 @@
         </section>
 
         <section>
-            <h3 class="text-base font-medium mb-2"><i class="fa-solid fa-book mr-2"></i>Mathematics Textbooks</h3>
-            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-
-                <div class="relative group overflow-hidden shadow border border-neutral-700 rounded-lg">
-                    <img src="./img/red.jpeg" alt="Statistics and Mechanics"
-                        class="w-full h-auto transition duration-300 group-hover:brightness-110 group-hover:scale-105" />
-                    <div
-                        class="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300">
-                        <a href="https://github.com/Richy-Z/richy.lol/releases/download/0.0.0-test/Maths.-.Statistics.and.Mechanics.Y1.pdf"
-                            target="_blank"
-                            class="flex items-center justify-center gap-2 w-32 px-4 py-2 text-base border border-white text-white rounded-none hover:bg-neutral-800 hover:border-neutral-800 transition">
-                            <i class="fa-solid fa-book-open"></i> View
-                        </a>
-                        <a href="https://activeteach-prod.resource.pearson-intl.com/r00/r0067/r006746/r00674672/current/Statistics_and_Mechanics_Year_1_AS_Extra_online_content.html"
-                            target="_blank"
-                            class="flex items-center justify-center gap-2 w-32 px-4 py-2 text-base border border-white text-white rounded-none hover:bg-neutral-800 hover:border-neutral-800 transition">
-                            <i class="fa-solid fa-clipboard-list"></i> Solutions
-                        </a>
-                    </div>
-                </div>
-
-                <div class="relative group overflow-hidden shadow border border-neutral-700 rounded-lg">
-                    <img src="./img/blue.jpeg" alt="Pure Mathematics"
-                        class="w-full h-auto transition duration-300 group-hover:brightness-110 group-hover:scale-105" />
-                    <div
-                        class="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300">
-                        <a href="https://github.com/Richy-Z/richy.lol/releases/download/0.0.0-test/Maths.-.Pure.Maths.Y1.pdf"
-                            target="_blank"
-                            class="flex items-center justify-center gap-2 w-32 px-4 py-2 text-base border border-white text-white rounded-none hover:bg-neutral-800 hover:border-neutral-800 transition">
-                            <i class="fa-solid fa-book-open"></i> View
-                        </a>
-                        <a href="https://activeteach-prod.resource.pearson-intl.com/r00/r0065/r006591/r00659130/current/Pure_Mathematics_Year_1_AS_Extra_online_content.html"
-                            target="_blank"
-                            class="flex items-center justify-center gap-2 w-32 px-4 py-2 text-base border border-white text-white rounded-none hover:bg-neutral-800 hover:border-neutral-800 transition">
-                            <i class="fa-solid fa-clipboard-list"></i> Solutions
-                        </a>
-                    </div>
-                </div>
-
-                <div class="relative group overflow-hidden shadow border border-neutral-700 rounded-lg">
-                    <img src="./img/green.jpeg" alt="Core Pure Mathematics"
-                        class="w-full h-auto transition duration-300 group-hover:brightness-110 group-hover:scale-105" />
-                    <div
-                        class="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300">
-                        <a href="https://github.com/Richy-Z/richy.lol/releases/download/0.0.0-test/Further.Maths.-.Core.Pure.1.AS.pdf"
-                            target="_blank"
-                            class="flex items-center justify-center gap-2 w-32 px-4 py-2 text-base border border-white text-white rounded-none hover:bg-neutral-800 hover:border-neutral-800 transition">
-                            <i class="fa-solid fa-book-open"></i> View
-                        </a>
-                        <a href="https://activeteach-prod.resource.pearson-intl.com/r00/r0072/r007215/r00721584/current/Core_Pure_Year_1_AS_Extra_online_content.html"
-                            target="_blank"
-                            class="flex items-center justify-center gap-2 w-32 px-4 py-2 text-base border border-white text-white rounded-none hover:bg-neutral-800 hover:border-neutral-800 transition">
-                            <i class="fa-solid fa-clipboard-list"></i> Solutions
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section>
             <h2 class="text-lg font-semibold mb-4">Recent</h2>
             <ul class="space-y-2">
                 <li><a target="_blank" href="https://peterhigginson.co.uk/LMC"
@@ -223,53 +270,6 @@
                             class="fa-solid fa-book-open mr-2"></i>LMC Documentation</a></li>
             </ul>
         </section>
-
-        <section>
-            <h2 class="text-lg font-semibold mb-4">Timetable</h2>
-
-            <div id="timetable-wrapper" class="space-y-8"></div>
-
-            <!-- Whole table template -->
-            <template id="timetable-template">
-                <div>
-                    <h3 class="mb-2 font-medium text-neutral-300">Week X</h3>
-                    <div class="overflow-x-auto rounded border border-neutral-700">
-                        <table class="min-w-full text-sm border border-neutral-700">
-                            <thead class="bg-neutral-800">
-                                <tr>
-                                    <th class="px-3 py-2 text-left font-medium">Period</th>
-                                    <th class="px-3 py-2 text-left font-medium">Mon</th>
-                                    <th class="px-3 py-2 text-left font-medium">Tue</th>
-                                    <th class="px-3 py-2 text-left font-medium">Wed</th>
-                                    <th class="px-3 py-2 text-left font-medium">Thu</th>
-                                    <th class="px-3 py-2 text-left font-medium">Fri</th>
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y divide-neutral-800"></tbody>
-                        </table>
-                    </div>
-                </div>
-            </template>
-
-            <!-- special row eg break or lunch with huge border idk -->
-            <template id="special-row-template">
-                <tr class="bg-neutral-800">
-                    <td class="px-3 py-2 font-medium">LABEL</td>
-                    <td colspan="5" class="px-3 py-2"></td>
-                </tr>
-            </template>
-
-            <template id="period-cell-template">
-                <td class="px-3 py-2 text-center align-middle border border-neutral-700">
-                    <div class="font-bold subject-text">SUBJECT</div>
-                    <div class="text-xs text-neutral-700 room-text">ROOM</div>
-                    <div class="text-xs text-neutral-600 teacher-text hidden">TEACHER</div>
-                    <div class="absolute bottom-1 right-1 grid gap-0.5 friends-list"></div>
-                </td>
-            </template>
-        </section>
-
-        <script src="timetable.js"></script>
     </main>
 </body>
 
