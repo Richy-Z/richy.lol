@@ -28,7 +28,8 @@
 			},
 			{
 				"subject": "PSE",
-				"room": "SF16"
+				"room": "M3",
+				"teacher": "Lo"
 			},
 			{
 				"subject": "Computing",
@@ -285,7 +286,8 @@
 			},
 			{
 				"subject": "PSE",
-				"room": "E22"
+				"room": "M3",
+				"teacher": "Lo"
 			},
 			{
 				"subject": "Economics",
