@@ -1,5 +1,5 @@
 (async () => {
-    const res = await fetch("./timetable_v2.json");
+    const res = await fetch("./timetable.json");
     const data = await res.json();
 
     const wrapper = document.getElementById("timetable-wrapper");
