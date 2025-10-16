@@ -24,7 +24,7 @@
 				"subject": "Further Ma",
 				"room": "M2",
 				"teacher": "Dr Mc",
-				"friends": ["B", "C", "E"]
+				"friends": ["B", "C", "E", "M"]
 			},
 			{
 				"subject": "PSE",
@@ -52,7 +52,8 @@
 			},
 			{
 				"subject": "Mathematics",
-				"room": "E16"
+				"room": "E16",
+				"friends": ["C"]
 			},
 			{
 				"subject": "Supervised St",
@@ -66,13 +67,14 @@
 				"subject": "Further Ma",
 				"room": "M2",
 				"teacher": "Dr Mc",
-				"friends": ["B", "C", "E"]
+				"friends": ["B", "C", "E", "M"]
 			}
 		],
 		"Wed": [
 			{
 				"subject": "Mathematics",
-				"room": "E17"
+				"room": "E17",
+				"friends": ["C"]
 			},
 			{
 				"subject": "Economics",
@@ -88,17 +90,17 @@
 				"subject": "Further Ma",
 				"room": "M1",
 				"teacher": "Hunt",
-				"friends": ["B", "C", "E"]
+				"friends": ["B", "C", "E", "M"]
 			},
 			{
 				"subject": "Young Enterprise",
 				"room": "SF15",
-				"friends": ["C", "E", "M", "N", "P"]
+				"friends": ["C", "E", "M", "N"]
 			},
 			{
 				"subject": "Young Enterprise",
 				"room": "SF15",
-				"friends": ["C", "E", "M", "N", "P"]
+				"friends": ["C", "E", "M", "N"]
 			}
 		],
 		"Thu": [
@@ -111,7 +113,7 @@
 				"subject": "Further Ma",
 				"room": "M2",
 				"teacher": "Dr Mc",
-				"friends": ["B", "C", "E"]
+				"friends": ["B", "C", "E", "M"]
 			},
 			{
 				"subject": "Economics",
@@ -141,7 +143,8 @@
 			},
 			{
 				"subject": "Mathematics",
-				"room": "E17"
+				"room": "E17",
+				"friends": ["C"]
 			},
 			{
 				"subject": "Computing",
@@ -159,7 +162,7 @@
 				"subject": "Further Ma",
 				"room": "M1",
 				"teacher": "Hunt",
-				"friends": ["B", "C", "E"]
+				"friends": ["B", "C", "E", "M"]
 			},
 			{
 				"subject": "Economics",
@@ -195,7 +198,7 @@
 				"subject": "Further Ma",
 				"room": "M2",
 				"teacher": "Dr Mc",
-				"friends": ["B", "C", "E"]
+				"friends": ["B", "C", "E", "M"]
 			}
 		],
 		"Tue": [
@@ -216,11 +219,12 @@
 				"subject": "Further Ma",
 				"room": "M2",
 				"teacher": "Dr Mc",
-				"friends": ["B", "C", "E"]
+				"friends": ["B", "C", "E", "M"]
 			},
 			{
 				"subject": "Mathematics",
-				"room": "E16"
+				"room": "E16",
+				"friends": ["C"]
 			},
 			{
 				"subject": "Computing",
@@ -240,7 +244,7 @@
 				"subject": "Further Ma",
 				"room": "M1",
 				"teacher": "Hunt",
-				"friends": ["B", "C", "E"]
+				"friends": ["B", "C", "E", "M"]
 			},
 			{
 				"subject": "Economics",
@@ -255,12 +259,12 @@
 			{
 				"subject": "Young Enterprise",
 				"room": "SF15",
-				"friends": ["C", "E", "M", "N", "P"]
+				"friends": ["C", "E", "M", "N"]
 			},
 			{
 				"subject": "Young Enterprise",
 				"room": "SF15",
-				"friends": ["C", "E", "M", "N", "P"]
+				"friends": ["C", "E", "M", "N"]
 			}
 		],
 		"Thu": [
@@ -270,7 +274,8 @@
 			},
 			{
 				"subject": "Mathematics",
-				"room": "S15"
+				"room": "S15",
+				"friends": ["C"]
 			},
 			{
 				"subject": "Computing",
@@ -299,13 +304,13 @@
 				"subject": "Further Ma",
 				"room": "M1",
 				"teacher": "Hunt",
-				"friends": ["B", "C", "E"]
+				"friends": ["B", "C", "E", "M"]
 			},
 			{
 				"subject": "Further Ma",
 				"room": "M2",
 				"teacher": "Dr Mc",
-				"friends": ["B", "C", "E"]
+				"friends": ["B", "C", "E", "M"]
 			},
 			{
 				"subject": "Economics",
