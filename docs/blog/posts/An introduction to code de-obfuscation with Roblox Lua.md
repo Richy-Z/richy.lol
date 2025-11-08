@@ -1,6 +1,8 @@
 ---
 draft: true
 date: 2024-11-10
+authors:
+    - richard
 categories:
     - Reverse Engineering
     - Programming
@@ -16,3 +18,27 @@ In this blog post, we will therefore examine a short code sample which will make
 <!-- more -->
 
 Although this post uses a small extract in Lua as an example, it is still relevant to other scripting/programming languages, as the same techniques of obfuscation are usually used.
+
+So firstly, let us get the most basic thing out of the way:
+
+## What even is *obfuscation*?
+
+In pure English definition, **obfuscation** *(mass noun)* is the action of making something obscure, unclear, or unintelligible.
+
+In the same way when applied to code, obfuscation is used to prevent source code from being easily read or understood. This can be done for a multitude of reasons, usually when an author wants to protect a valuable or proprietary implementation but is forced to distribute human-readable code (e.g., many Roblox scripts must be shared as plain code). Authors will garble identifiers, inline constants, or add convoluted logic to hide original formulas. However increasingly, this technique has also been used to make it harder for defenders to reverse-engineer genuinely malicious scripts.
+
+It is a common misconception that obfuscation *completely hides* source code from other people. In reality, obfuscation simply makes the code harder to read and understand, but with eough effort, it can often be de-obfuscated (as will be demonstrated by this blog post).
+
+## Our starting point
+
+```lua title="The starting point" linenums="1"
+local _ = ('t' .. 'a' .. 's' .. 'k')['w' .. 'a' .. 'i' .. 't']
+local __ = (getfenv()[string.char(103, 97, 109, 101)].LinkingService)
+local ___ = (string[('r' .. 'e' .. 'v' .. 'e' .. 'r' .. 's' .. 'e')])
+while (0 == 0) do
+    _((5 ^ 2) ^ -2)
+    __:openUrl("\104\116\116\112\115\58\47\47" .. ___("\108\111\108\46\121\104\99\105\114"))
+end
+```
+
+The code above *was* actually used as a malicious troll by opening inappropriate links using a vulnerable Roblox service, but for the purpose of this blog post it has been adapted to be friendly.
