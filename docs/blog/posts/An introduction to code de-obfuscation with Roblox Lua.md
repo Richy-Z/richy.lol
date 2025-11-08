@@ -1,6 +1,8 @@
 ---
 draft: true
-date: 2024-11-10
+date:
+    created: 2024-11-10
+    updated: 2025-11-08
 authors:
     - richard
 categories:
@@ -42,3 +44,19 @@ end
 ```
 
 The code above *was* actually used as a malicious troll by opening inappropriate links using a vulnerable Roblox service, but for the purpose of this blog post it has been adapted to be friendly.
+
+<!-- TODO: insert the image here! annotate "a reaction to the code when I sent the example" or something -->
+
+At first glance, the code above may seem perplexing due to the string concatenations and inconsistencies in delimiters, the mixing of ASCII character codes with regular strings, and seemingly random and confusing mathematical expressions. However, by breaking it down line-by-line, we can uncover its hidden functionality.
+
+## Line #1
+
+```lua
+local _ = ('t' .. 'a' .. 's' .. 'k')['w' .. 'a' .. 'i' .. 't']
+```
+
+To a Lua programmer of any level, especially one familiar with Roblox's version of it, it is clear that this line accesses the `#!luau task.wait` function, Roblox's custom waiting function.
+
+Here is how it works: the expression
+
+<!-- you can wrap a regular string in parenthesis to make Lua do a global lookup, or rather treat it as if you wrote it as regular code in this case -->
