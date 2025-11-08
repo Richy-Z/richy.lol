@@ -1,0 +1,125 @@
+site_name: Richard Ziupsnys
+site_description: Richard Ziupsnys' personal blog and documentation site.
+site_url: https://richy-z.github.io/mkdocs-testing/
+
+edit_uri: edit/main/docs
+
+plugins:
+  - search
+  - blog
+  - git-revision-date-localized:
+      type: timeago
+      fallback_to_build_date: true
+      enabled: true
+  # - git-committers:
+  #     enabled: true
+  #     repository: Richy-Z/mkdocs-testing
+  #     branch: main
+  #     exclude_committers:
+  #       - web-flow
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences:
+
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - admonition
+
+theme:
+  logo: branding/rz-logo-dark.png
+  favicon: branding/rz-square-colour.png
+
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+
+  language: en
+
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+
+    - navigation.tracking
+
+    - navigation.tabs
+    - navigation.tabs.sticky
+
+    - navigation.sections
+    - navigation.expand
+
+    - navigation.path
+    - navigation.indexes # allows you to provide an index file for each section
+
+    - navigation.top
+
+    - toc.follow
+
+    - search.suggest
+    - search.share
+
+    - content.action.edit
+    # - content.action.view
+
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+
+  custom_dir: overrides
+
+  name: material
+  font:
+    text: Cabin
+    code: JetBrains Mono
+
+  palette:
+    - media: "(prefers-color-scheme)"
+
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to Early Bird mode
+
+    - media: "(prefers-color-scheme: light)"
+      scheme: numelon_light
+
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to Night Owl mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+
+      toggle:
+        icon: material/weather-night
+        name: Switch to automatic mode
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  generator: false
+
+  analytics:
+    provider: custom
+
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://richy.lol/
+
+    - icon: fontawesome/solid/envelope
+      link: mailto:hello@richy.lol
+
+    - icon: fontawesome/brands/github
+      link: https://github.com/Richy-Z
+
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/richy-z/
+
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/Hr3GYj7nsc
