@@ -1,6 +1,6 @@
 site_name: Richard Ziupsnys
 site_description: Richard Ziupsnys' personal blog and documentation site.
-site_url: https://richy-z.github.io/mkdocs-testing/
+site_url: https://richy.lol/
 
 edit_uri: edit/main/docs
 
@@ -13,7 +13,7 @@ plugins:
       enabled: true
   # - git-committers:
   #     enabled: true
-  #     repository: Richy-Z/mkdocs-testing
+  #     repository: Richy-Z/richy.lol
   #     branch: main
   #     exclude_committers:
   #       - web-flow
