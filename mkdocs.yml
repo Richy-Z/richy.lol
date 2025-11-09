@@ -64,7 +64,7 @@ theme:
     - search.suggest
     - search.share
 
-    - content.action.edit
+    # - content.action.edit
     # - content.action.view
 
     - content.code.copy
