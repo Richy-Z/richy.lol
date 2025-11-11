@@ -58,6 +58,7 @@ theme:
     - navigation.indexes # allows you to provide an index file for each section
 
     - navigation.top
+    - navigation.footer
 
     - toc.follow
 
