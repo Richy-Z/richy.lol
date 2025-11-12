@@ -1,4 +1,4 @@
-# *ceteris paribus*
+# *Ceteris paribus*
 
 *(Latin)*: All other things remain unchanged.
 

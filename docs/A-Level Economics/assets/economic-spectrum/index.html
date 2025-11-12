@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Economic Spectrum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:wght@500;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="card">
+        <div class="scale-labels">
+            <span class="strong">Command Economy</span>
+            <span class="center">Mixed Economy Zone (around 4-7)</span>
+            <span class="strong">Free Market Economy</span>
+        </div>
+
+        <div class="scale-container">
+            <div class="scale-line" id="scale-line">
+                <div class="scale-tick" style="left: 0%;">
+                    <span>0</span>
+                </div>
+                <div class="scale-tick" style="left: 25%;">
+                    <span>2.5</span>
+                </div>
+                <div class="scale-tick" style="left: 50%;">
+                    <span>5</span>
+                </div>
+                <div class="scale-tick" style="left: 75%;">
+                    <span>7.5</span>
+                </div>
+                <div class="scale-tick" style="left: 100%;">
+                    <span>10</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Legend -->
+        <div class="legend">
+            <span class="tag"><strong>0</strong> ≈ full state planning, minimal private property</span>
+            <span class="tag"><strong>5</strong> ≈ mixed model, state + private markets</span>
+            <span class="tag"><strong>10</strong> ≈ highly liberalised markets, strong private sector</span>
+            <span class="tag">Positions are approximate &amp; conceptual, not official scores.</span>
+        </div>
+    </section>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <script src="spectrum.js"></script>
+</body>
+
+</html>
