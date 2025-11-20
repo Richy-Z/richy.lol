@@ -43,7 +43,7 @@
 				"subject": "Computing",
 				"room": "W11",
 				"teacher": "Steel",
-				"friends": ["B", "E", "M"]
+				"friends": ["B", "E", "M", "R", "R"]
 			},
 			{
 				"subject": "Supervised St",
@@ -84,7 +84,7 @@
 				"subject": "Computing",
 				"room": "W11",
 				"teacher": "Steel",
-				"friends": ["B", "E", "M"]
+				"friends": ["B", "E", "M", "R", "R"]
 			},
 			{
 				"subject": "Further Ma",
@@ -107,7 +107,7 @@
 			{
 				"subject": "Supervised St",
 				"room": "SF1",
-				"friends": ["B"]
+				"friends": ["B", "C", "E", "L", "M"]
 			},
 			{
 				"subject": "Further Ma",
@@ -125,7 +125,8 @@
 			},
 			{
 				"subject": "Supervised St",
-				"room": "E31"
+				"room": "E31",
+				"friends": ["R"]
 			},
 			{
 				"subject": "Mathematics",
@@ -156,7 +157,7 @@
 				"subject": "Computing",
 				"room": "W11",
 				"teacher": "Steel",
-				"friends": ["B", "E", "M"]
+				"friends": ["B", "E", "M", "R", "R"]
 			},
 			{
 				"subject": "Further Ma",
@@ -181,7 +182,7 @@
 				"subject": "Computing",
 				"room": "W11",
 				"teacher": "Steel",
-				"friends": ["B", "E", "M"]
+				"friends": ["B", "E", "M", "R", "R"]
 			},
 			null,
 			{
@@ -238,7 +239,7 @@
 				"subject": "Computing",
 				"room": "W11",
 				"teacher": "Steel",
-				"friends": ["B", "E", "M"]
+				"friends": ["B", "E", "M", "R", "R"]
 			},
 			{
 				"subject": "Further Ma",
@@ -287,7 +288,7 @@
 				"subject": "Computing",
 				"room": "W11",
 				"teacher": "Steel",
-				"friends": ["B", "E", "M"]
+				"friends": ["B", "E", "M", "R", "R"]
 			},
 			{
 				"subject": "PSE",
