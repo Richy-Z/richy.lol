@@ -1,4 +1,4 @@
-# *Capital*
+# *Enterprise*
 
 A person's skill of seeking out profitable opportunities in production in addition to their ability/willingness to take risks.
 
