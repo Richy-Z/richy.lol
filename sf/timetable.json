@@ -1,0 +1,333 @@
+{
+	"colours": {
+		"Economics": ["bg-orange-300", "text-orange-900"],
+		"Mathematics": ["bg-blue-300", "text-blue-900"],
+		"Further Ma": ["bg-pink-300", "text-pink-900"],
+		"Computing": ["bg-green-300", "text-green-900"],
+
+		"Supervised St": ["bg-yellow-100", "text-yellow-900"],
+		"Young Enterprise": ["bg-red-300", "text-red-900"],
+
+		"PSE": ["bg-violet-300", "text-violet-900"],
+
+		"⸻": ["", "text-neutral-300"]
+	},
+	"a": {
+		"Mon": [
+			null,
+			{
+				"subject": "Economics",
+				"room": "SF15"
+			},
+			{
+				"subject": "Further Ma",
+				"room": "M2",
+				"teacher": "Dr Mc",
+				"friends": ["B", "C", "E", "M"]
+			},
+			{
+				"subject": "Further Ma",
+				"room": "M2",
+				"teacher": "Dr Mc",
+				"friends": ["B", "C", "E", "M"]
+			},
+			{
+				"subject": "PSE",
+				"room": "E20",
+				"teacher": "Dean"
+			},
+			{
+				"subject": "Computing",
+				"room": "W10",
+				"teacher": "Johnson",
+				"friends": ["B", "E", "M"]
+			}
+		],
+		"Tue": [
+			{
+				"subject": "Computing",
+				"room": "W11",
+				"teacher": "Steel",
+				"friends": ["B", "E", "M", "R", "R"]
+			},
+			{
+				"subject": "Supervised St",
+				"room": "E31",
+				"friends": ["B", "E", "M", "N"]
+			},
+			{
+				"subject": "Mathematics",
+				"room": "E16",
+				"friends": ["C"]
+			},
+			{
+				"subject": "Supervised St",
+				"room": "E31"
+			},
+			{
+				"subject": "Supervised St",
+				"room": "Library"
+			},
+			{
+				"subject": "Further Ma",
+				"room": "M2",
+				"teacher": "Dr Mc",
+				"friends": ["B", "C", "E", "M"]
+			}
+		],
+		"Wed": [
+			{
+				"subject": "Mathematics",
+				"room": "E17",
+				"friends": ["C"]
+			},
+			{
+				"subject": "Economics",
+				"room": "SF15"
+			},
+			{
+				"subject": "Computing",
+				"room": "W11",
+				"teacher": "Steel",
+				"friends": ["B", "E", "M", "R", "R"]
+			},
+			{
+				"subject": "Further Ma",
+				"room": "M1",
+				"teacher": "Hunt",
+				"friends": ["B", "C", "E", "M"]
+			},
+			{
+				"subject": "Young Enterprise",
+				"room": "SF15",
+				"friends": ["C", "E", "M", "N"]
+			},
+			{
+				"subject": "Young Enterprise",
+				"room": "SF15",
+				"friends": ["C", "E", "M", "N"]
+			}
+		],
+		"Thu": [
+			{
+				"subject": "Supervised St",
+				"room": "SF1",
+				"friends": ["B", "C", "E", "L", "M"]
+			},
+			{
+				"subject": "Further Ma",
+				"room": "M2",
+				"teacher": "Dr Mc",
+				"friends": ["B", "C", "E", "M"]
+			},
+			{
+				"subject": "Economics",
+				"room": "SF15"
+			},
+			{
+				"subject": "Economics",
+				"room": "SF15"
+			},
+			{
+				"subject": "Supervised St",
+				"room": "E31",
+				"friends": ["R"]
+			},
+			{
+				"subject": "Mathematics",
+				"room": "M3",
+				"teacher": "Lo",
+				"friends": ["C"]
+			}
+		],
+		"Fri": [
+			{
+				"subject": "Mathematics",
+				"room": "M3",
+				"teacher": "Lo",
+				"friends": ["C"]
+			},
+			{
+				"subject": "Mathematics",
+				"room": "E17",
+				"friends": ["C"]
+			},
+			{
+				"subject": "Computing",
+				"room": "W10",
+				"teacher": "Johnson",
+				"friends": ["B", "E", "M"]
+			},
+			{
+				"subject": "Computing",
+				"room": "W11",
+				"teacher": "Steel",
+				"friends": ["B", "E", "M", "R", "R"]
+			},
+			{
+				"subject": "Further Ma",
+				"room": "M1",
+				"teacher": "Hunt",
+				"friends": ["B", "C", "E", "M"]
+			},
+			{
+				"subject": "Economics",
+				"room": "SF15"
+			}
+		]
+	},
+	"b": {
+		"Mon": [
+			{
+				"subject": "Supervised St",
+				"room": "E31",
+				"friends": ["B"]
+			},
+			{
+				"subject": "Computing",
+				"room": "W11",
+				"teacher": "Steel",
+				"friends": ["B", "E", "M", "R", "R"]
+			},
+			null,
+			{
+				"subject": "Mathematics",
+				"room": "M3",
+				"teacher": "Lo",
+				"friends": ["C"]
+			},
+			{
+				"subject": "Supervised St",
+				"room": "SF1"
+			},
+			{
+				"subject": "Further Ma",
+				"room": "M2",
+				"teacher": "Dr Mc",
+				"friends": ["B", "C", "E", "M"]
+			}
+		],
+		"Tue": [
+			{
+				"subject": "Supervised St",
+				"room": "E31"
+			},
+			{
+				"subject": "Economics",
+				"room": "SF15"
+			},
+			{
+				"subject": "Supervised St",
+				"room": "SF1",
+				"friends": ["B"]
+			},
+			{
+				"subject": "Further Ma",
+				"room": "M1",
+				"teacher": "Hunt",
+				"friends": ["B", "C", "E", "M"]
+			},
+			{
+				"subject": "Mathematics",
+				"room": "E16",
+				"friends": ["C"]
+			},
+			{
+				"subject": "Computing",
+				"room": "W10",
+				"teacher": "Johnson",
+				"friends": ["B", "E", "M"]
+			}
+		],
+		"Wed": [
+			{
+				"subject": "Computing",
+				"room": "W11",
+				"teacher": "Steel",
+				"friends": ["B", "E", "M", "R", "R"]
+			},
+			{
+				"subject": "Further Ma",
+				"room": "M1",
+				"teacher": "Hunt",
+				"friends": ["B", "C", "E", "M"]
+			},
+			{
+				"subject": "Economics",
+				"room": "SF15"
+			},
+			{
+				"subject": "Mathematics",
+				"room": "M3",
+				"teacher": "Lo",
+				"friends": ["C"]
+			},
+			{
+				"subject": "Young Enterprise",
+				"room": "SF15",
+				"friends": ["C", "E", "M", "N"]
+			},
+			{
+				"subject": "Young Enterprise",
+				"room": "SF15",
+				"friends": ["C", "E", "M", "N"]
+			}
+		],
+		"Thu": [
+			{
+				"subject": "Supervised St",
+				"room": "E31"
+			},
+			{
+				"subject": "Mathematics",
+				"room": "S15",
+				"friends": ["C"]
+			},
+			{
+				"subject": "Computing",
+				"room": "W10",
+				"teacher": "Johnson",
+				"friends": ["B", "E", "M"]
+			},
+			{
+				"subject": "Computing",
+				"room": "W11",
+				"teacher": "Steel",
+				"friends": ["B", "E", "M", "R", "R"]
+			},
+			{
+				"subject": "PSE",
+				"room": "SF14",
+				"teacher": "Dean"
+			},
+			{
+				"subject": "Economics",
+				"room": "SF15"
+			}
+		],
+		"Fri": [
+			null,
+			{
+				"subject": "Further Ma",
+				"room": "M2",
+				"teacher": "Dr Mc",
+				"friends": ["B", "C", "E", "M"]
+			},
+			{
+				"subject": "Economics",
+				"room": "SF15"
+			},
+			{
+				"subject": "Economics",
+				"room": "SF15"
+			},
+			null,
+			{
+				"subject": "Mathematics",
+				"room": "M3",
+				"teacher": "Lo",
+				"friends": ["C"]
+			}
+		]
+	}
+}

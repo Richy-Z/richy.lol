@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Converter - Richard Ziupsnys</title>
+    <meta name="author" content="Richard Ziupsnys">
+
+    <meta name="keywords"
+        content="string, converter, ascii, utf, utf8, text, encoding, utilities, tool, code, program, programming, lua, obfuscate, deobfuscate, javascript, js, luau, roblox, decompiler, exploit, executor">
+
+    <link rel="shortcut icon" href="/branding/rz-letter-colour.png" type="image/png">
+
+    <meta name="theme-color" content="#fd1b61" />
+    <meta name="description"
+        content="Convert ASCII, UTF-8, and other character encodings using a sleek interface with additional helpful utilities for text transformation and decoding.">
+
+    <meta property="og:url" content="https://richy.lol/string-converter.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="String Converter - Richard Ziupsnys">
+    <meta property="og:description"
+        content="Convert ASCII, UTF-8, and other character encodings using a sleek interface with additional helpful utilities for text transformation and decoding.">
+    <meta property="og:image" content="https://richy.lol/stringconverter-meta.png">
+    <meta property="og:image:width" content="1920">
+    <meta property="og:image:height" content="1080">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="richy.lol">
+    <meta property="twitter:url" content="https://richy.lol/string-converter.html">
+    <meta name="twitter:title" content="String Converter - Richard Ziupsnys">
+    <meta name="twitter:description"
+        content="Convert ASCII, UTF-8, and other character encodings using a sleek interface with additional helpful utilities for text transformation and decoding.">
+    <meta name="twitter:image" content="https://richy.lol/stringconverter-meta.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Numelon PLSTRK -->
+    <script defer data-domain="richy.lol"
+        src="https://plstrk.numelon.com/js/script.file-downloads.hash.outbound-links.js"></script>
+    <script>window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+</head>
+
+<body>
+    <div class="container">
+        <a href="https://richy.lol" target="_blank">
+            <img src="/branding/rz-logo-colour.png" alt="Richard Ziupsnys Logo">
+        </a>
+
+        <h2>String Converter</h2>
+        <p>Enter your string below:</p>
+
+        <textarea type="text" id="input" placeholder="\99\104, etc..."></textarea>
+
+        <div class="action-group">
+            <select onchange="updatePlaceholder()" id="separator">
+                <option value="\">Backslash (\)</option>
+                <option value="-">Hyphen (-)</option>
+                <option value=",">Comma (,)</option>
+                <option value=" ">Space</option>
+                <option value="code">Code/Program</option>
+            </select>
+            <button onclick="convert()">Convert</button>
+            <button onclick="loadFromFile()">Load from File</button>
+        </div>
+
+        <h3>Results</h3>
+        <textarea id="results"></textarea>
+
+        <h3>Utilities</h3>
+        <p>These utilities will apply immediately on the result.</p>
+
+        <button onclick="saveToFile()">Save to File</button>
+        <button onclick="copyToClipboard()">Copy to Clipboard</button>
+        <br>
+        <br>
+        <button onclick="removeWhitespace()">Remove Whitespace</button>
+        <button onclick="reverse()">Reverse</button>
+        <button onclick="toLowerCase()">Lowercase</button>
+        <button onclick="toUpperCase()">Uppercase</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
