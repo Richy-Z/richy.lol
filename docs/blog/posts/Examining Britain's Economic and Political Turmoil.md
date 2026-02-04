@@ -8,6 +8,7 @@ authors:
 categories:
     - Economics
     - Politics
+comments: true
 ---
 
 # Examining Britain's Economic and Political Turmoil

@@ -9,6 +9,7 @@ categories:
     - Reverse Engineering
     - Programming
     - Lua
+comments: true
 ---
 
 # An introduction to code de-obfuscation with Roblox Lua
