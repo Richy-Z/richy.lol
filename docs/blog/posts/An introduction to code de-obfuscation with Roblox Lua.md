@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 date:
     created: 2024-11-10
     updated: 2025-11-08
@@ -183,3 +183,42 @@ end
 ```
 
 ### Line 7 - Embedded escape codes
+
+Convert the embedded escape codes in the string back to regular characters using [my online tool](https://richy.lol/string-converter/):
+
+![Using richy.lol/string-converter to convert embedded escape codes in Lua strings back to regular characters](./assets/lua-code-deobf/embedded-escape-codes.png)
+
+and thus we now have this line:
+
+```lua title="Embedded escape codes replaced with regular characters" linenums="1"
+while true do
+    task.wait(0.0016)
+    __:openUrl("https://" .. ___("lol.yhcir"))
+end
+```
+
+### The final part
+
+And remember that we previously discovered certain variables like `#!lua __` and `#!lua ___` to be the following:
+
+```lua title="Previously identified variables" linenums="1"
+local t = tonumber
+local _ = task.wait
+local __ = game.LinkingService
+local ___ = string.reverse
+```
+
+Thus the following line: `#!lua "https://" .. ___("lol.yhcir")` simplifies to `#!lua "https://" .. string.reverse("lol.yhcir")`, which becomes `#!lua "https://" .. "richy.lol"` and finally `#!lua "https://richy.lol"`.
+
+Therefore, our final code just looks like this:
+
+```lua title="Manually de-obfuscated code" linenums="1"
+while true do
+    task.wait(0.0016)
+    game.LinkingService:openUrl("https://richy.lol")
+end
+```
+
+Congratulations, you have just de-obfuscated a script with one of the best de-obfuscation tools known to man: your human brain.
+
+What this code does is uses Roblox's LinkingService to open my website from a vulnerable environment every 0.0016 seconds.

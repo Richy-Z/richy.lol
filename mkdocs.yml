@@ -24,6 +24,8 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.superfences:
+  - pymdownx.arithmatex:
+      generic: true
 
   - pymdownx.inlinehilite
   - pymdownx.snippets
@@ -102,6 +104,10 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - js/mathjax-config.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra:
   generator: false
