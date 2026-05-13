@@ -1,0 +1,232 @@
+:root {
+  --bg: #1b1a19;
+  --card-bg: #23211f;
+  --text: #f4ede8;
+  --text-muted: #cfc7c2;
+  --accent: #fd1b61;
+  --accent-alt: #e05a18;
+  --border: #3a3533;
+  --radius: 4px;
+  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg);
+  font-family: "Libre Baskerville", serif;
+  color: var(--text);
+}
+
+.card {
+  width: 90%;
+  max-width: 1100px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  padding: 2rem 2rem 1.6rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+h1 {
+  font-family: "Cabin", sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.02em;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 700px;
+}
+
+.scale-labels {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Cabin", sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 0.6rem;
+}
+
+.scale-labels span.center {
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.scale-container {
+  position: relative;
+  margin: 2.5rem 0 1.5rem;
+  height: 60px;
+}
+
+.scale-line {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 6px;
+  border-radius: var(--radius);
+  background: linear-gradient(90deg, var(--accent), var(--accent-alt));
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.scale-tick {
+  position: absolute;
+  top: calc(50% + 3px);
+  width: 1px;
+  height: 8px;
+  background: #514c49;
+}
+
+.scale-tick span {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.point {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: transform var(--transition);
+  padding: 12px;
+}
+
+.point-dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--text);
+  border: 1px solid var(--border);
+  transition: background var(--transition), box-shadow var(--transition),
+    transform var(--transition);
+}
+
+.point:hover .point-dot {
+  background: var(--accent);
+  box-shadow: 0 0 16px rgba(253, 27, 97, 0.7);
+  transform: scale(1.1);
+}
+
+.point-flag {
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2rem;
+  opacity: 0.95;
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+.point:hover .point-flag {
+  transform: translateX(-50%) translateY(1px);
+  opacity: 1;
+}
+
+.point-label {
+  position: absolute;
+  top: -38px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Cabin", sans-serif;
+  font-size: 0.8rem;
+  color: var(--text);
+  background: #2a2523;
+  border: 1px solid var(--border);
+  padding: 3px 8px;
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity var(--transition), transform var(--transition);
+  white-space: nowrap;
+}
+
+.point:hover .point-label {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-4px);
+}
+
+.tooltip {
+  position: fixed;
+  max-width: 300px;
+  background: #2a2523;
+  color: var(--text);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.6);
+  padding: 0.9rem 1.1rem;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity var(--transition), transform var(--transition);
+  z-index: 50;
+}
+
+.tooltip strong {
+  color: var(--accent);
+  font-family: "Cabin", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 1rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .scale-labels {
+    font-size: 0.85rem;
+  }
+
+  .point-label {
+    font-size: 0.7rem;
+  }
+
+  .tooltip {
+    font-size: 0.8rem;
+  }
+
+  .point-dot {
+    width: 18px;
+    height: 18px;
+  }
+
+  .point-flag {
+    top: 24px;
+    font-size: 1rem;
+  }
+}
